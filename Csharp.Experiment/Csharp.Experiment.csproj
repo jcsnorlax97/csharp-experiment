@@ -5,9 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="FluentValidation" />
-  </ItemGroup>
-  <ItemGroup>
     <PackageReference Include="FluentValidation" Version="7.2.1" />
   </ItemGroup>
 </Project>

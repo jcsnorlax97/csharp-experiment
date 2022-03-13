@@ -1,4 +1,4 @@
-﻿using System;
+﻿using Csharp.Experiment.Experiments.E001_FluentValidation;
 
 namespace Csharp.Experiment
 {
@@ -6,7 +6,15 @@ namespace Csharp.Experiment
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World");
+            SimulateFluentValidationExperiment();
+        }
+
+        public static void SimulateFluentValidationExperiment()
+        {
+            var experiment = new FluentValidationExperiment(
+                new CustomerValidator(),
+                new Customer(string.Empty, string.Empty));
+            experiment.SimulateExperiment();
         }
     }
 }
